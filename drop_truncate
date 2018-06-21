@@ -1,0 +1,25 @@
+create database sample;
+create table employee
+(
+    name varchar(20) primary key,
+    age varchar(2),
+    sex varchar(2)
+);
+create table student
+(
+    name varchar(20),
+    age integer(5),
+    sex varchar(2)
+);
+create table production
+(
+    machine varchar(20) primary key,
+    model varchar(10),
+    no varchar(5)
+);
+show tables;
+alter table student change column name firstname varchar(20);
+insert into student values ("HARI",18,"M"),("PRANESH",18,"M"),("hai",25,"M");
+select * from student;
+truncate table student;
+select * from student;
